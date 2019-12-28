@@ -1,3 +1,4 @@
+/* eslint-disable strict */
 const express = require('express')
 const path = require('path')
 const CommentsService = require('./comments-service')

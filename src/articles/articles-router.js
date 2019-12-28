@@ -1,3 +1,4 @@
+/* eslint-disable strict */
 const express = require('express')
 const ArticlesService = require('./articles-service')
 
@@ -8,6 +9,7 @@ articlesRouter
   .get((req, res, next) => {
     ArticlesService.getAllArticles(req.app.get('db'))
       .then(articles => {
+        console.log(articles)
         res.json(articles.map(ArticlesService.serializeArticle))
       })
       .catch(next)

@@ -1,3 +1,4 @@
+/* eslint-disable strict */
 const xss = require('xss')
 
 const CommentsService = {
